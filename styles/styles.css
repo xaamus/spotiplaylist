@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eff0f7;
+  overflow-x: hidden;
+  color: #141414;
+}
+
+#cred {
+  font-style: italic;
+}
+
+header {
+  height: 120px;
+  background-color: #FD0054;
+  color: #eff0f7;
+  font-family: unbounded;
+  padding: 0 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 3;
+}
+header #title {
+  font-weight: 600;
+  font-size: calc(22px + 0.5vw);
+  width: 100%;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+header #credits {
+  font-weight: 300;
+  font-size: calc(15px + 0.5vw);
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  width: 100%;
+  text-align: right;
+}
+
+footer {
+  height: 80px;
+  width: 100%;
+  background-color: #141414;
+  color: #FD0054;
+  font-family: unbounded;
+  padding: 0 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+footer #title {
+  font-weight: 600;
+  width: 100%;
+  text-align: center;
+  font-size: calc(14px + 0.5vw);
+  width: 100%;
+}
+footer #credits {
+  font-weight: 300;
+  text-align: center;
+  font-size: calc(12px + 0.5vw);
+  width: 100%;
+}
+
+section {
+  padding: 2rem 0 1rem;
+}
+section #container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+section .imags {
+  width: 140px;
+  height: 140px;
+  border-radius: 4px;
+  box-shadow: 0 0 3px 1px #888888;
+  margin-bottom: 10px;
+}
+
+.row_ele {
+  width: 190px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.row_ele .par_song {
+  text-align: center;
+  font-family: archivo;
+  font-weight: 400;
+}
+.row_ele .par_arts {
+  text-align: center;
+  font-family: unbounded;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.row_ele .par_rlsd {
+  text-align: center;
+  font-family: unbounded;
+  font-weight: 400;
+  font-size: 12px;
+}/*# sourceMappingURL=styles.css.map */
