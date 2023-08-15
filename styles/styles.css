@@ -92,7 +92,7 @@ section .imags {
   width: 140px;
   height: 140px;
   border-radius: 4px;
-  box-shadow: 0 0 3px 1px #888888;
+  box-shadow: 2px -3px 10px 1px #c7c7c7, -2px -3px 10px 1px #c7c7c7;
   margin-bottom: 10px;
 }
 

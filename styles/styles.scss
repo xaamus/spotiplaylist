@@ -3,6 +3,7 @@ $maincolor: #FD0054;
 $textcolor: #141414;
 $headerfont: unbounded;
 $textfont: archivo;
+$imgshadow: #c7c7c7;
 
 *{
     margin: 0;
@@ -110,7 +111,7 @@ section{
         width: $imgsize;
         height: $imgsize;
         border-radius: 4px;
-        box-shadow: 0 0 3px 1px #888888;
+        box-shadow: 2px -3px 10px 1px $imgshadow, -2px -3px 10px 1px $imgshadow;
         margin-bottom: 10px;
     }
 }

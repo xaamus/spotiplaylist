@@ -3,8 +3,8 @@ setInterval(function(){
     section.style.minHeight = innerHeight-230+'px';
 },1);
 
-var container = document.getElementById('container');
 function button(){
+    var container = document.getElementById('container');
     var text = '';
     var k = 0;
     var numbers = [];
