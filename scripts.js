@@ -45,4 +45,5 @@ function button(){
     loading.style.display = 'none';
     container.innerHTML = text;
 }
+
 setTimeout(button,2000)
