@@ -1,4 +1,4 @@
-let Song = [
+var Song = [
     "2 MUCH (feat. 24hrs)",
     "Bap U",
     "Crossed The Line",
@@ -648,7 +648,7 @@ let Song = [
     "KILLERSOUND",
     "Here it Comes - Snavs & Toby Green Remix"
 ]
-let Artist = [
+var Artist = [
     "Flosstradamus, 24hrs",
     "Party Favor",
     "Vosai, Facading, Linn Sandin",
@@ -1298,7 +1298,7 @@ let Artist = [
     "CAB, Virus Mafia",
     "Pegboard Nerds, Snavs, Toby Green"
 ]
-let Release = [
+var Release = [
     "2018-02-09",
     "2014-10-07",
     "2021-01-21",
@@ -1948,7 +1948,7 @@ let Release = [
     "2023-08-04",
     "2014-11-17"
 ]
-let Added = [
+var Added = [
     "2021-10-08",
     "2021-10-10",
     "2021-10-17",
@@ -2598,7 +2598,7 @@ let Added = [
     "2023-08-04",
     "2023-08-07"
 ]
-let Subgenre = [
+var Subgenre = [
     "brostep, edm, electro house, electronic trap, mashup, trap soul",
     "brostep, edm, electro house, electronic trap",
     "dark r&b",
@@ -3248,7 +3248,7 @@ let Subgenre = [
     "nan",
     "brostep, complextro, danish electronic, edm, electro house, glitch, speedrun, bass trap, electronic trap, traprun, dutch house, progressive electro house, sky room"
 ]
-let Genre = [
+var Genre = [
     "Dance/Electronic, R&B",
     "Dance/Electronic",
     "nan",
@@ -3898,7 +3898,7 @@ let Genre = [
     "nan",
     "Dance/Electronic, New age"
 ]
-let Album = [
+var Album = [
     "2 MUCH (feat. 24hrs)",
     "Bap U",
     "Crossed The Line",
@@ -4548,7 +4548,7 @@ let Album = [
     "Sable Valley Summer, Vol. 4",
     "The Uncaged Remixes"
 ]
-let Label = [
+var Label = [
     "Ultra Records",
     "Mad Decent",
     "NCS",
@@ -5198,7 +5198,7 @@ let Label = [
     "Sable Valley Records",
     "Monstercat"
 ]
-let ID = [
+var ID = [
     "6jtNk2zqbiZ9S7l6Gcp78A",
     "4Ijr3J0lnLCGZvpXBiqCjU",
     "14bPhQGPr1GZcgs1DRK01R",
@@ -5848,7 +5848,7 @@ let ID = [
     "3eYt8dH8fQxKoVKSFb3VwN",
     "0QKEkKiQAxdKXeUq0iKFK7"
 ]
-let Image = [
+var Image = [
     "https://i.scdn.co/image/ab67616d00001e02e33747b9ab166458663809b0",
     "https://i.scdn.co/image/ab67616d00001e02626b2b7c0a8975b722bc5143",
     "https://i.scdn.co/image/ab67616d00001e02a15e307ac96af58fff08db15",
