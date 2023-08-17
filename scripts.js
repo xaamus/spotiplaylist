@@ -1,10 +1,12 @@
 var section = document.getElementById('section')
 setInterval(function(){
-    section.style.minHeight = innerHeight-230+'px';
+    section.style.minHeight = innerHeight-250+'px';
 },1);
 
+
+
+var container = document.getElementById('container');
 function button(){
-    var container = document.getElementById('container');
     var text = '';
     var k = 0;
     var numbers = [];
@@ -45,5 +47,19 @@ function button(){
     loading.style.display = 'none';
     container.innerHTML = text;
 }
-
 setTimeout(button,2000)
+
+
+function wide(row_ele){
+    let x = document.body.clientWidth;
+    let y = x;
+    while (x>=row_ele){
+        x = x - row_ele;
+        if (x>=row_ele){
+            x = x - 10;
+        }
+    }
+    y = y - x;
+    container.style.width = y + 'px';
+}
+setInterval(wide,1,180);

@@ -1,9 +1,9 @@
 $bgcolor: #eff0f7;
 $maincolor: #FD0054;
 $textcolor: #141414;
+$imgshadow: #c7c7c7;
 $headerfont: unbounded;
 $textfont: archivo;
-$imgshadow: #c7c7c7;
 
 *{
     margin: 0;
@@ -11,6 +11,9 @@ $imgshadow: #c7c7c7;
     box-sizing: border-box;
 }
 
+html{
+    background-color: $maincolor;
+}
 body{
     background-color: $bgcolor;
     overflow-x: hidden;
@@ -58,6 +61,7 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-top: 20px;
 
     #title{
         font-weight: 600;
@@ -78,6 +82,8 @@ footer{
     
 
 section{
+    display: flex;
+    justify-content: center;
     #loading{
         width: 100px;
         height: 100px;
@@ -102,7 +108,8 @@ section{
     #container{
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-evenly;
+        justify-content: flex-start;
+        column-gap: 10px;
     }
 
     $imgsize: 140px;
@@ -111,22 +118,27 @@ section{
         width: $imgsize;
         height: $imgsize;
         border-radius: 4px;
-        box-shadow: 2px -3px 10px 1px $imgshadow, -2px -3px 10px 1px $imgshadow;
-        margin-bottom: 10px;
+        box-shadow: 2px -2px 10px 1px $imgshadow, -2px -2px 10px 1px $imgshadow;
+        margin-bottom: 8px;
     }
 }
 
 .row_ele{
-    width: 190px;
+    width: 180px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 30px;
+    padding: 20px;
+    padding-top: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    transition: background-color .2s;
 
     .par_song{
         text-align: center;
         font-family: $textfont;
         font-weight: 400;
+        font-size: 16px;
     }
 
     .par_arts{
@@ -135,6 +147,8 @@ section{
         font-weight: 500;
         text-transform: uppercase;
         font-size: 12px;
+        margin-bottom: 3px;
+        margin-top: 3px;
     }
 
     .par_rlsd{
@@ -142,5 +156,17 @@ section{
         font-family: $headerfont;
         font-weight: 400;
         font-size: 12px;
+        border-top: 1px solid $imgshadow;
+        border-bottom: 1px solid $imgshadow;
+        width: 100%;
+        line-height: 16px;
+        transition: border .2s;
     }
+}
+.row_ele:hover{
+    background-color: #e5e6ee;
+}
+.row_ele:hover .par_rlsd{
+    border-top: 1px solid $textcolor;
+    border-bottom: 1px solid $textcolor;
 }
