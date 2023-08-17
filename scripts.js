@@ -1,6 +1,6 @@
 var section = document.getElementById('section')
 setInterval(function(){
-    section.style.minHeight = innerHeight-250+'px';
+    section.style.minHeight = innerHeight-260+'px';
 },1);
 
 
