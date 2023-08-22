@@ -359,14 +359,14 @@ var ID = [
     "2dxjKgT0li4qBI3QwuN9Ih"
 ]
 var Image = [
-    "https://i.scdn.co/image/ab67616d00001e02699bfca9512ee8d1fbf126a7",
-    "https://i.scdn.co/image/ab67616d00001e02699bfca9512ee8d1fbf126a7",
-    "https://i.scdn.co/image/ab67616d00001e02699bfca9512ee8d1fbf126a7",
-    "https://i.scdn.co/image/ab67616d00001e02699bfca9512ee8d1fbf126a7",
-    "https://i.scdn.co/image/ab67616d00001e02699bfca9512ee8d1fbf126a7",
-    "https://i.scdn.co/image/ab67616d00001e02699bfca9512ee8d1fbf126a7",
-    "https://i.scdn.co/image/ab67616d00001e02699bfca9512ee8d1fbf126a7",
-    "https://i.scdn.co/image/ab67616d00001e02699bfca9512ee8d1fbf126a7",
+    "https://i.scdn.co/image/ab67616d00001e025c837cc621c1ec82bf3c81ac",
+    "https://i.scdn.co/image/ab67616d00001e025c837cc621c1ec82bf3c81ac",
+    "https://i.scdn.co/image/ab67616d00001e025c837cc621c1ec82bf3c81ac",
+    "https://i.scdn.co/image/ab67616d00001e025c837cc621c1ec82bf3c81ac",
+    "https://i.scdn.co/image/ab67616d00001e025c837cc621c1ec82bf3c81ac",
+    "https://i.scdn.co/image/ab67616d00001e025c837cc621c1ec82bf3c81ac",
+    "https://i.scdn.co/image/ab67616d00001e025c837cc621c1ec82bf3c81ac",
+    "https://i.scdn.co/image/ab67616d00001e025c837cc621c1ec82bf3c81ac",
     "https://i.scdn.co/image/ab67616d00001e021dacfbc31cc873d132958af9",
     "https://i.scdn.co/image/ab67616d00001e021dacfbc31cc873d132958af9",
     "https://i.scdn.co/image/ab67616d00001e021dacfbc31cc873d132958af9",

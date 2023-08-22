@@ -3,8 +3,6 @@ setInterval(function(){
     section.style.minHeight = innerHeight-260+'px';
 },1);
 
-
-
 var container = document.getElementById('container');
 function button(){
     var text = '';
@@ -51,8 +49,8 @@ setTimeout(button,2000)
 
 
 function wide(row_ele){
-    let x = document.body.clientWidth;
-    let y = x;
+    var x = document.body.clientWidth;
+    var y = x;
     while (x>=row_ele){
         x = x - row_ele;
         if (x>=row_ele){
