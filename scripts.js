@@ -4,7 +4,7 @@ setInterval(function(){
 },1);
 
 var container = document.getElementById('container');
-function button(){
+function printData(){
     var text = '';
     var k = 0;
     var numbers = [];
@@ -34,7 +34,7 @@ function button(){
 
     for (j=0;j<Song.length;j++){
         text += '<div class="row_ele">';
-        text += '<img class="imags" src="'+Image[k]+'">';
+        text += '<img alt="'+Artist[k]+' - '+Song[k]+'" class="par_img" src="'+Image[k]+'">';
         text += '<p class="par_song">'+Song[k]+'</p>';
         text += '<p class="par_arts">'+Artist[k]+'</p>';
         text += '<p class="par_rlsd">'+Release[k].slice(0,4)+'</p>';
@@ -45,19 +45,27 @@ function button(){
     loading.style.display = 'none';
     container.innerHTML = text;
 }
-setTimeout(button,2000)
+setTimeout(printData,2000)
 
-
-function wide(row_ele){
+function wide(row_elew){
+    let row_ele = document.querySelectorAll('.row_ele');
+    for (i=0;i<row_ele.length;i++){
+        row_ele[i].style.width = row_elew + 'px';
+    }
     var x = document.body.clientWidth;
+    x = x - 0.05 * x;
+    container.style.width = x + 'px';
     var y = x;
-    while (x>=row_ele){
-        x = x - row_ele;
-        if (x>=row_ele){
+    let eleCount = 0;
+    while (x >= row_elew){
+        x = x - row_elew;
+        eleCount++;
+        if (x >= row_elew){
             x = x - 10;
         }
     }
-    y = y - x;
-    container.style.width = y + 'px';
+    let gap = (y - (row_elew * eleCount)) / (eleCount-1);
+    container.style.columnGap = gap + 'px';
 }
-setInterval(wide,1,180);
+
+setInterval(wide,1,180)
