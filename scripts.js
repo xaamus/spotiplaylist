@@ -1,36 +1,41 @@
-var section = document.getElementById('section')
+let section = document.getElementById('section')
 setInterval(function(){
     section.style.minHeight = innerHeight-260+'px';
 },1);
 
-var container = document.getElementById('container');
+let container = document.getElementById('container');
 function printData(){
-    var text = '';
-    var k = 0;
-    var numbers = [];
+    let text = '';
+    let k = 0;
+    let numbers = [];
 
     for (i=0;i<Song.length;i++){
         numbers.push(i);
     }
 
-    for (i=numbers.length-1;i>0;i--){
-        const j = Math.floor(Math.random() * (i + 1));
-        const temp = numbers[i];
-        numbers[i] = numbers[j];
-        numbers[j] = temp;
-    }
-
-    function randomizeArray(SelArray){
-        for (i=0;i<SelArray.length;i++){
-            temp = SelArray[i];
-            SelArray[i] = SelArray[numbers[i]];
+    function shuffle(ar1,ar2,ar3,ar4){
+        let index = Song.length;
+        let rnd, tmp1, tmp2, tmp3, tmp4;
+      
+        while (index){
+            rnd = Math.floor(Math.random() * index);
+            index -= 1;
+            tmp1 = ar1[index];
+            tmp2 = ar2[index];
+            tmp3 = ar3[index];
+            tmp4 = ar4[index];
+            ar1[index] = ar1[rnd];
+            ar2[index] = ar2[rnd];
+            ar3[index] = ar3[rnd];
+            ar4[index] = ar4[rnd];
+            ar1[rnd] = tmp1;
+            ar2[rnd] = tmp2;
+            ar3[rnd] = tmp3;
+            ar4[rnd] = tmp4;
         }
     }
 
-    randomizeArray(Song);
-    randomizeArray(Artist);
-    randomizeArray(Release);
-    randomizeArray(Image);
+    shuffle(Song,Artist,Release,Image);
 
     for (j=0;j<Song.length;j++){
         text += '<div class="row_ele">';
@@ -41,7 +46,7 @@ function printData(){
         text += '</div>';
         k += 1;
     }
-    var loading = document.getElementById('loading');
+    let loading = document.getElementById('loading');
     loading.style.display = 'none';
     container.innerHTML = text;
 }
@@ -52,10 +57,10 @@ function wide(row_elew){
     for (i=0;i<row_ele.length;i++){
         row_ele[i].style.width = row_elew + 'px';
     }
-    var x = document.body.clientWidth;
+    let x = document.body.clientWidth;
     x = x - 0.05 * x;
     container.style.width = x + 'px';
-    var y = x;
+    let y = x;
     let eleCount = 0;
     while (x >= row_elew){
         x = x - row_elew;
